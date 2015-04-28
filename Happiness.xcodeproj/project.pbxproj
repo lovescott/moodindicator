@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		819EC9021AEC06DC001075A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EC9011AEC06DC001075A7 /* AppDelegate.swift */; };
-		819EC9041AEC06DC001075A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EC9031AEC06DC001075A7 /* ViewController.swift */; };
 		819EC9071AEC06DC001075A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819EC9051AEC06DC001075A7 /* Main.storyboard */; };
 		819EC9091AEC06DC001075A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819EC9081AEC06DC001075A7 /* Images.xcassets */; };
 		819EC90C1AEC06DC001075A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819EC90A1AEC06DC001075A7 /* LaunchScreen.xib */; };
 		819EC9181AEC06DC001075A7 /* HappinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EC9171AEC06DC001075A7 /* HappinessTests.swift */; };
+		819EC9221AEC077A001075A7 /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EC9211AEC077A001075A7 /* HappinessViewController.swift */; };
+		819EC9241AEC0975001075A7 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EC9231AEC0975001075A7 /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		819EC8FC1AEC06DC001075A7 /* Happiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819EC9001AEC06DC001075A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		819EC9011AEC06DC001075A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		819EC9031AEC06DC001075A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		819EC9061AEC06DC001075A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		819EC9081AEC06DC001075A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		819EC90B1AEC06DC001075A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		819EC9111AEC06DC001075A7 /* HappinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappinessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		819EC9161AEC06DC001075A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		819EC9171AEC06DC001075A7 /* HappinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessTests.swift; sourceTree = "<group>"; };
+		819EC9211AEC077A001075A7 /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
+		819EC9231AEC0975001075A7 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,9 @@
 		819EC8FE1AEC06DC001075A7 /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
-				819EC9011AEC06DC001075A7 /* AppDelegate.swift */,
-				819EC9031AEC06DC001075A7 /* ViewController.swift */,
 				819EC9051AEC06DC001075A7 /* Main.storyboard */,
-				819EC9081AEC06DC001075A7 /* Images.xcassets */,
-				819EC90A1AEC06DC001075A7 /* LaunchScreen.xib */,
+				819EC9231AEC0975001075A7 /* FaceView.swift */,
+				819EC9211AEC077A001075A7 /* HappinessViewController.swift */,
 				819EC8FF1AEC06DC001075A7 /* Supporting Files */,
 			);
 			path = Happiness;
@@ -90,6 +90,9 @@
 		819EC8FF1AEC06DC001075A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				819EC9011AEC06DC001075A7 /* AppDelegate.swift */,
+				819EC90A1AEC06DC001075A7 /* LaunchScreen.xib */,
+				819EC9081AEC06DC001075A7 /* Images.xcassets */,
 				819EC9001AEC06DC001075A7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				819EC9041AEC06DC001075A7 /* ViewController.swift in Sources */,
+				819EC9221AEC077A001075A7 /* HappinessViewController.swift in Sources */,
 				819EC9021AEC06DC001075A7 /* AppDelegate.swift in Sources */,
+				819EC9241AEC0975001075A7 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				819EC91D1AEC06DC001075A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		819EC91E1AEC06DC001075A7 /* Build configuration list for PBXNativeTarget "HappinessTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				819EC9201AEC06DC001075A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
